@@ -10,14 +10,14 @@
 //    c.innerHTML=a[n];
 // }  
 
-// let a=<img src="https://picsum.photos/200/300"/ >
-// coin.innerHTML=a;
+
+
 
 // var img = document.createElement("img");
 
-// img.src ="https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png;
+// img.src ="https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png";
 
-// var src = document.getElementById("myImg");
+// var src = document.getElementById("coin");
 
 // src.appendChild(img);
 
@@ -53,32 +53,70 @@
         
 //             })
 
-// setInterval(async function(){
-// document.querySelector("#krishna").classList.toggle("tail");
+let k; 
+
+function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
+  }
+
+
+let t=0;
+
+
+function myfunction2(){
+    t++;
+
+    if(t==1) 
+    {let m=getRandomArbitrary(30,50); 
+    m=Number.parseInt(m);
+     let i=0;
+     i=Number.parseInt(i);
+    
+     k=setInterval(async function(){
+         win.innerHTML="FLIPPING ";
+         toss.innerHTML="" ;
+         console.log("")
+        ++i;
+        if(i===m)
+        {
+        
+             myfunction()
+        }
+        
+        document.querySelector("#krishna").classList.toggle("tail");
+
+},301)  } 
+
+if(t>1)
+{   
+    myfunction();
+   
+}
+
+}
 
 
 
-// },300)  
-
-// function myfunction(){
-//  let a=["head","tail"] 
-//  let n=Math.random()*2; 
-//  n=Number.parseInt(n);
 
 
-//     document.querySelector("#krishna").classList.remove(a[n]);
 
-
-// }
-
- 
-let a=["Rohan & Mohan were sitting in a kabristan & were talkingRohan: Mohan dekho yeh murde kitne aaraam se apni kabron mein sote hai.Sare murde uth khare hue aur bole Kyun na soye yeh jaga tari bapa ki thodhi na hai!","Rubel apni lover se milne gaya, kuch baat ke baad uski girlfirend chaye(tea) banane ke liye rannaghar pe chali gayi,Lover ke mobile sofa pe dekh kar Rubel ne socha ke chalo dekhte hai mera number iss ne kisnaam se save kya hai?Dear, sweety ya jaanu!Jab usne misscall di to screen pe likh raha tha “Murga No.5? Calling!!!","Parul (naukrani) ne Parul se kaha, memsahab gajab ho gaya, pados ki teen auraten aap ki saas ko peet rahi hai.Parul Naukrani ke saath balakani se aayi aur chup chap tamasha dekhne lagi.Naukarani ne pucha, aap madad karne nahi jayengi?Parul: Nahi uske liye teen hi kafi hai.","Habildar: Tumhe kal subah 6 baje pe phansi di jayegi Liton: Ha ha ha!Habildar: Kyu hass rahe ho?Liton: Main toh subha 9 baje tak sota hoon!","Pappu: yar mere pas paise nhi hy mujhe kapre lena hen kya karun?Dost: To bank se loan le loPappu: Loan to le lun magar hmko sirf cotton pehanne ki adat hai"]
-
-
- function myfunction()
+function myfunction() {
+    t=0;
+     clearInterval(k);
+ if(krishna.classList.contains("tail"))
  {
-    let n=Math.random()*5; 
-  n=Number.parseInt(n); 
-   joke.innerHTML=a[n];
- 
-}  
+    win.innerHTML="Head";
+ }
+ else
+ {
+    win.innerHTML="Tail";
+
+ }
+     
+  }
+
+
+
+  
+
+

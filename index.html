@@ -1,31 +1,77 @@
-<!doctype html>
-<html lang="en" data-bs-theme="dark">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toss the coin</title>
+  <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+  <div class="heading"><h1>TOSS THE COIN<h1></div>
+  <div class="card1">
+    <div class="card">
+
    
+  <div id ="krishna" class="head tail"></div>
+  <div id="win">Click start for toss </div>
+
+  <div id="toss">
+
+ </div>
+
+ <div>
+   
+<button id="play"  class="button-85" role="button" onclick="myfunction2()">START</button>
+<button  id="play1">RESULT</button>
+
+ </div>
+  <div class="text">
+   <br>
+   <br>
+   <br>
+    <p id ="request">Any problem please reload again</p>
     
-   <link rel="stylesheet" href="style.css">
-    
-  </head>
-  <body>
-    <!-- <button id="button1">click me</button>
-    <br>
-    <button id="button2">click me</button>
-       
-  <h1>Booked Mark</h1>
-    <button id="button3">Google</button>
-    <button id="button4">Facebook</button> -->
-    <!-- <button id="button5">Twitter</button> -->
+  </div>
+</div>
+</div>
+<footer>
+ 
+  <p>Copyright &COPY; 2024 Sorting Code Technologies Pvt Ltd. All Rights Reserved.</p>
 
-    <!-- <div id ="krishna" class="head tail"></div>
-    <button onclick="myfunction()">click me</button> --> 
 
-    <div class="heading"><h1>Joke World</h1></div>
-    <button onclick="myfunction()">Click For Joke</button>
-    <div id ="joke" class="joke"></div>
-    <script src="index.js"></script>  
-  </body>
+</footer>
+<script>
+  let play = document.getElementById("play");
+      function playMusic() {
+       let audio = new Audio("coin-flip-88793.mp3");
+       audio.play()
+    }
+    play.addEventListener("click", playMusic);
+   
+   
+</script>
+<script>
+let play1 = document.getElementById("play1");
+  function playMusic1() {
+    if(krishna.classList.contains("tail"))
+ { let audio = new Audio("head-pronoucenation.mp3");
+   audio.play1()}
 
+   else 
+   {
+    let audio = new Audio("tail-prnocu=enation.mp3");
+   audio.play1()
+
+   }
+}
+play1.addEventListener("click", playMusic1);
+
+
+</script>
+
+  <script src="index.js"></script>  
+</body>
 </html>
